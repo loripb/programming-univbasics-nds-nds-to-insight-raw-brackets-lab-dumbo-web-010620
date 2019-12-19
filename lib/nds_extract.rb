@@ -13,7 +13,7 @@ def directors_totals(nds)
   result         = {}
 
   puts nds[0]
-  
+
 
 
   #
