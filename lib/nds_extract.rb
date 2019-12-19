@@ -13,7 +13,7 @@ def directors_totals(nds)
   result         = {}
 
   puts nds[0][:name]
-  puts nds[0][:movies][:title]
+  puts nds[0][:movies][0]
 
 
 
