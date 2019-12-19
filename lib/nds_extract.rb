@@ -10,25 +10,24 @@ def directors_totals(nds)
 
   # names can be found with nds[array index][:name]
   # worldwide_gross can be found with nds[array index][:movies][array index][:worldwide_gross]
-  result      = {}
-  movie = []
+  result          = {}
   movie_gross_sum = 0
-  director_index = 0
+  director_index  = 0
 
   while director_index < nds.length
-    movie_index = 0
+    movie_index   = 0
     director_name = nds[director_index][:name] # stores directors name in a variable
 
     while movie_index < nds[director_index][:movies].length
       movie_gross = nds[director_index][:movies][movie_index][:worldwide_gross] # stores worldwide_gross in a variable
 
       movie_gross_sum += movie_gross
-      movie_index += 1
+      movie_index     += 1
     end
     result[director_name] = movie_gross_sum # Adds directors name and movie_gross to hash
 
     director_index += 1
-    movie_gross_sum = 0
+    movie_gross_sum = 0 # resets the sum for next iteration
   end
 
   p result
