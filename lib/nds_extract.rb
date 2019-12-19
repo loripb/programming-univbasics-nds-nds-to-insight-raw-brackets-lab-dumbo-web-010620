@@ -9,11 +9,13 @@ def directors_totals(nds)
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
 
   # names can be found with nds[array index][:name]
-  # worldwide_gross can be found with nds[array index][:movie][array index][:worldwide_gross]
+  # worldwide_gross can be found with nds[array index][:movies][array index][:worldwide_gross]
   result         = {}
+  movie_index = 0
 
   puts nds[0][:name]
   puts nds[0][:movies][0][:worldwide_gross]
+
 
 
 
