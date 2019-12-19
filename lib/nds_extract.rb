@@ -19,19 +19,18 @@ def directors_totals(nds)
     director_name = nds[director_index][:name] # stores directors name in a variable
 
     while movie_index < nds[director_index][:movies].length
-      movie_gross = nds[director_index][:movies][movie_index][:worldwide_gross] # stores worldwide_gross in a variable
-
-      movie_gross_sum += movie_gross
+      movie_gross_sum += nds[director_index][:movies][movie_index][:worldwide_gross] # stores worldwide_gross in a variable
       movie_index     += 1
+
     end
     result[director_name] = movie_gross_sum # Adds directors name and movie_gross to hash
 
     director_index += 1
     movie_gross_sum = 0 # resets the sum for next iteration
+
   end
 
   p result
-
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
