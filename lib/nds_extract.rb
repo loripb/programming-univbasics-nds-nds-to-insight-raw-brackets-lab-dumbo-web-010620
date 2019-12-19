@@ -24,10 +24,9 @@ def directors_totals(nds)
       movie_gross_sum += movie_gross
       movie_index += 1
     end
+    result[director_name] = movie_gross_sum # Adds directors name and movie_gross to hash
 
     director_index += 1
-
-    result[director_name] = movie_gross_sum # Adds directors name and movie_gross to hash
   end
 
   p result
