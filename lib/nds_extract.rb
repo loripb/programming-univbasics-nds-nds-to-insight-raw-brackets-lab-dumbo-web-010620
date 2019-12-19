@@ -44,4 +44,4 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
 end
 
-puts directors_totals(directors_database)
+directors_totals(directors_database)
