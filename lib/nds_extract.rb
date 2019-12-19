@@ -20,7 +20,7 @@ def directors_totals(nds)
     movie_index = 0
     director_name = nds[director_index][:name] # stores directors name in a variable
 
-    puts director_name
+    result[director_name] = "1"
 
     director_index += 1
 
