@@ -19,6 +19,10 @@ def directors_totals(nds)
   while movie_index < nds[0][:movies]
     puts " ayeeeee $#{nds[0][:movies][movie_index][:worldwide_gross]}"
 
+    movie_index += 1
+
+  end
+
 
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
