@@ -14,14 +14,9 @@ def directors_totals(nds)
   director_index = 0
 
 
-    director_name = ''
-    movie_index   = 0
+  director_name = ''
+  movie_index   = 0
 
-    while movie_index < nds.length
-      puts nds[director_index][:movies]
-
-      movie_index += 1
-    end
 
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
