@@ -10,7 +10,7 @@ def directors_totals(nds)
 
   # names can be found with nds[array index][:name]
   # worldwide_gross can be found with nds[array index][:movies][array index][:worldwide_gross]
-  result         = {}
+  result      = {}
   movie_index = 0
 
   puts nds[0][:name]
