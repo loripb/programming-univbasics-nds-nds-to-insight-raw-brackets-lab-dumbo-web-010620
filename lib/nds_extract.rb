@@ -21,8 +21,9 @@ def directors_totals(nds)
     director_name = nds[director_index][:name] # stores directors name in a variable
 
     while movie_index < nds[director_index][:movies].length
-      puts nds[director_index][:movies][movie_index][:worldwide_gross] # stores worldwide_gross in a variable
+      movie_gross = nds[director_index][:movies][movie_index][:worldwide_gross] # stores worldwide_gross in a variable
 
+      result[director_name] = movie_gross
       movie_index += 1
     end
 
