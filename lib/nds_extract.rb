@@ -31,7 +31,7 @@ def directors_totals(nds)
     movie_gross_sum = 0
   end
 
-  p movie_gross_sum
+  p result
 
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
