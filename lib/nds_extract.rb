@@ -11,18 +11,23 @@ def directors_totals(nds)
   # names can be found with nds[array index][:name]
   # worldwide_gross can be found with nds[array index][:movies][array index][:worldwide_gross]
   result      = {}
-  movie_index = 0
+  director_index = 0
 
   puts nds[0][:name]
   puts nds[0][:movies][0][:worldwide_gross]
 
-  while movie_index < nds[0][:movies].length
-    puts " ayeeeee $#{nds[0][:movies][movie_index][:worldwide_gross]}"
+  while director_index < nds.length
+    movie_index = 0
 
-    movie_index += 1
+    while movie_index < nds[0][:movies].length
+      # nds[0][:movies][movie_index][:worldwide_gross]
+
+      movie_index += 1
+    end
+
+    director_index += 1
 
   end
-
 
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
